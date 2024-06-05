@@ -1,0 +1,73 @@
+
+.redressed {
+    font-family: 'redressed', Autography;
+}
+
+.merriweather {
+    font-family: 'merriweather', serif;
+}
+.cc-navbar {
+    background-color: rgba(0, 0, 0, 0.55);
+    font-family: 'Gill Sans MT',serif;
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0,54);
+    z-index: 99;
+}
+
+.cc-navbar .nav-link {
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom 0.4s ease-in-out, border-color .3s ease;
+}
+
+.cc-navbar .nav-link:hover {
+    padding-bottom: 40px;
+    border-bottom-color:var(--bs-teal) ;
+    transition: .5s;
+}
+
+.banner, .order-form {
+    background:linear-gradient(rgba(51, 12, 54, 0.5), rgba(0, 0, 0, 0.5)), url('../FEUILLE/IMAGES/IMG_1.jpg') 
+    center center no-repeat fixed;
+    background-size: cover;
+    height: 500px;
+}
+.order-form {
+    height: 500px;
+}
+
+.cc-menu {
+    background:linear-gradient(rgba(1, 54, 88, 0.5), rgba(0, 0, 0, 0.5)), url('../FEUILLE/IMAGES/IMG_2.jpg') 
+    no-repeat fixed;
+    background-size: cover;
+    height: 200px;
+
+}
+
+.carousel-inner {
+    width: 500px;
+    position: fixed center;
+}
+.banner .banner-desc {
+    font-size: 48px;
+    font-weight: 400;
+    color:wheat;
+}
+.btn-order {
+    color: pink;
+    color : var(--bs-teal);
+    border-color:var(--bs-teal);
+    transition: 0.5s;
+}
+
+.btn-order :hover
+.btn-order:active{
+    color : white;
+    background-color:var(--bs-teal);
+}
+
+footer {
+    height: 200px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: rgb(240, 231, 215);
+    border-top: 2px solid #AAA;
+}

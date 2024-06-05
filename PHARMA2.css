@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Merriweather', serif;
+}
+/* navbar*/
+
+#navbar{
+    background-color: rgba(69, 73, 70, 0.55);
+    box-shadow: 1PX 1PX 3PX rgba(255, 255, 255, 0.54);
+    position: sticky;
+    top: 0%;
+    z-index: 999; 
+    transform: translateY(-30px);
+    animation: apparition 0.4s 1.6s ease-out forwards;
+   
+}
+.BONO{
+    color: rgb(16, 238, 16);
+  } 
+  .BIBI{
+    color: rgb(235, 8, 8);
+}
+
+.navbar.nav{
+    margin-left: 50px;
+}
+.nav-item{
+    margin-left: 90px;
+
+}
+.nav-item .nav-link{
+    color: #f7f2f2;
+    margin-left: 2px;
+    text-shadow: 0px 0px 1px black;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    color: #0a0a0a;
+
+}
+.dropdown-menu li a{
+color: #f5f0f0;
+transition: 0.5s ease;
+}
+.dropdown-menu li a:hover{
+    background-color: rgb(217, 214, 218);
+    color: #069436;
+}
+#search input{
+border-radius: 50px;
+border: none;
+
+}
+#search button{
+    border-radius: 50px;
+    color: #f7f3f3;
+    border: 1px solid #069436;
+    background-color: #069436;
+}
+#logo iconify-icon {
+   padding-right: 5px; 
+   padding-top: px;
+
+}
+.sam p{position: absolute;
+    top: 10px;
+    bottom: 80px;
+    left: 910px;
+    background-color: brown;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    font-size: 8px;
+    color: white;
+}
+/*end navbar*/
+/*medecins*/
+.section-p1{
+    padding:40PX 80PX;
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("PARA/PARA14.jpg") center center fixed  no-repeat;
+    background-size: cover;
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.3) ;
+    border: 1px solid #e9dfdf;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(172, 199, 233, 0.1);
+}
+#feature .fe-box h6{
+    display: inline-block;
+padding: 9PX 8PX 6PX 8PX;
+line-height: 1;
+border-radius: 4px;
+color: #0c5837;
+background-color: #e9dfdf;
+
+}
+#feature .fe-box:nth-child(2)h6{
+background-color: #0c5837;
+}
+/* end medecins*/
+
+/* slider*/
+.slider{
+    width: 1300px;
+    max-width: 100vw;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+   transform: translateY(-30px);
+    animation: apparition 0.4s 1.6s ease-out forwards;
+}
+.list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+}
+
+.list img{
+    width: 1300px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+    
+}
+.buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button{
+    width: 30px;
+    height: 30PX;
+    border-radius:20%;
+    background-color: dimgrey;
+    color: #faeded;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.dots{
+    position: absolute;
+    bottom: 10px;
+    color: #faeded;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+}
+.dots li{
+    list-style: none;
+    height:10px ;
+    width: 10px;
+    background-color: #faeded;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.dots li.active{
+   width: 30px;
+}
+@media screen  and (max-width:768px){
+    .slider{
+        height: 400px;
+    }
+    
+}
+/*end slider*/
+/*products cartes*/
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #e9dfdf;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(15, 15, 15, 0.02) ;
+    margin: 15px 0;
+    transition: 0.2s ;
+    position: relative;
+}
+#product1 .pro:hover{
+    transform: scale(1.1);
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span{
+    color: slategrey;
+    font-size: 12px;
+}
+#product1 .pro .des h5{
+    font-size: 14px;
+    padding-top: 7px;
+    color: #141414;
+}
+#product1 .pro .des h4{
+    font-size: 15px;
+    padding-top: 7px;
+    color: #141414;
+    font-weight: 700;
+}
+
+    #product1 .pro .cart{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50px;
+        font-weight: 500;
+        color: rgb(17, 17, 17);
+        background-color: rgb(135, 164, 189);
+        border: 1PX solid #f8f4f4;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+     }
+/* end products cartes*/
+@keyframes apparition{
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+@media screen and (max-width:560px)and (min-width:500px){
+    .sam p{position: absolute;
+        top: 210px;
+        bottom: 80px;
+        left: 120px;
+        background-color: brown;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        font-size: 8px;
+        color: white;
+    }
+}

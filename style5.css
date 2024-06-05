@@ -1,0 +1,78 @@
+:root{
+    --blue:#3498db;
+    --red: #e74c3c;
+    --orange:#f39c12;
+    --black:#333;
+    --white:#fff;
+    --light-bg:#eee;
+    --box-shadow:0 10px 10px rgba(0,0,0,.1);
+    --border: 2px solid var(--black);
+}
+.message{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    padding: 15px 10px;
+    background-color: #3f4346;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    color: rgb(255, 250, 240);
+}
+
+.form-container{
+        background: linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("PARA/PARA20.jpg") center center fixed  no-repeat; ;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.form-container form{
+    width: 550px;
+    border-radius: 10px;
+    border: var(--border);
+    padding: 20px;
+    text-align: center;
+    background-color: var(--white);
+}
+.form-container form .box{
+    width: 100%;
+    border-radius: 10px;
+    border: var(--border);
+    padding: 10px 1px;
+    font-size: 18px;
+    margin: 5px 0;
+}
+.form-container form p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: var(--black);
+}
+.form-container form p a{
+    color: var(--blue);
+}
+.form-container form h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 12px;
+    color: var(--black);
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: rgb(230, 212, 189);
+}
+.btn{
+    background-color: #97c2df;
+}
